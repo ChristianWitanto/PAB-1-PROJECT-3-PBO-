@@ -3,18 +3,23 @@ import 'package:dart_pbo_project_3/dart_pbo_project_3.dart' as dart_pbo_project_
 void main(List<String> arguments) {
   print('Hello world: ${dart_pbo_project_3.calculate()}!');
 
-  var mobil1 = new Mobil("Honda","CR-V",2026);
+  var mobil1 = Mobil("Honda","CR-V",2026);
+  var mobil2 = Mobil("Toyota","Fortuner",2021);
+
+
+  mobil1.infoMobil();
+  mobil2.infoMobil();
 }
 
 class Mobil{
-  String Merk;
-  String Model;
+  String merk;
+  String model;
   int tahunProduksi;
 
-  Mobil(this.Merk,this.Model,this.tahunProduksi);
+  Mobil(this.merk,this.model,this.tahunProduksi);
 
   void infoMobil(){
-    print('$Merk $Model $tahunProduksi');
+    print('$merk $model $tahunProduksi');
 
   }
 }
